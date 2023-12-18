@@ -1,0 +1,378 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  background-color: var(--bg-text);
+}
+
+.logo p {
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--white-text);
+  font-family: "Cardo", serif;
+}
+
+#nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  padding: 0 4rem;
+}
+
+#nav a {
+  text-decoration: none;
+  color: var(--white-text);
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+#nav > a {
+  border: 2px solid var(--white-text);
+  padding: 0.5rem 2.5rem;
+  border-radius: 0.75rem;
+  transition: all 0.3s ease-in-out;
+}
+
+#nav > a:hover {
+  background-color: var(--white-text);
+  color: var(--bg-text);
+}
+
+#nav .logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+#menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  list-style: none;
+  margin: 0 auto;
+  gap: 2rem;
+}
+
+#menu li::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: var(--white-text);
+  transition: width 0.3s ease;
+}
+
+#menu li:hover::after {
+  width: 100%;
+}
+
+#hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  background-image: url("./assets/hero-img.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.filter {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  background: #000000ab;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+#hero-text {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  gap: 0.75rem;
+}
+
+#hero-text p {
+  font-family: "Poppins", sans-serif;
+  color: var(--white-text);
+}
+
+#hero-text p:nth-child(1) {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+#hero-text p:nth-child(2) {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--bg-text);
+}
+
+#hero-text p:nth-child(3) {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.hero a {
+  text-decoration: none;
+  color: var(--white-text);
+  font-size: 1.2rem;
+  font-weight: 400;
+  border: 2px solid var(--white-text);
+  padding: 0.5rem 2.5rem;
+  border-radius: 0.75rem;
+  width: fit-content;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+}
+
+.hero a:hover {
+  background-color: var(--text-color);
+  color: var(--white-text);
+}
+
+#sobre {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  background: var(--background);
+}
+
+.sobre {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+}
+.sobre > h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--white-text);
+  text-align: center;
+  width: 400px;
+  margin: 2rem auto;
+}
+
+.sobre-grid {
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5rem 0;
+}
+
+.sobre-grid p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--white-text);
+  text-align: justify;
+  width: 50%;
+}
+
+#mission {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  background: var(--white-text);
+}
+
+.mission {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  gap: 8rem;
+  margin-bottom: 10rem;
+}
+
+.mission > h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--bg-text);
+  text-align: center;
+  width: 400px;
+  margin: 2rem auto;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  gap: 5rem;
+  align-items: center;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card > h1 {
+  font-family: "Cardo", serif;
+  background: var(--background);
+  padding: 1rem 4rem;
+  color: var(--white-text);
+  font-size: 1.2rem;
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+}
+
+.card:nth-child(2) > h1 {
+  background: var(--bg-text);
+}
+
+#products {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  background: var(--bg-text);
+}
+
+.products-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.products-container > h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--white-text);
+  text-align: center;
+  width: 400px;
+  margin: 2rem auto;
+}
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  gap: 5rem;
+  align-items: center;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 5rem;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  color: var(--white-text);
+}
+
+footer {
+  width: 100%;
+  background-color: var(--background);
+  display: flex;
+  align-items: center;
+  padding: 3rem 0;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  font-family: "Poppins", sans-serif;
+}
+
+#nav-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+
+#nav-footer h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--white-text);
+}
+
+#nav-footer ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  list-style: none;
+  gap: 1rem;
+}
+
+#nav-footer ul li a {
+  text-decoration: none;
+  color: var(--white-text);
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.socials {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.socials > h1 {
+  font-family: "Cardo", serif;
+  font-size: 1.2rem;
+  color: var(--white-text);
+  margin-bottom: 2rem;
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  color: #fff;
+}

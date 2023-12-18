@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&family=Poppins:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700;800&display=swap");
+:root {
+  --bg-text: #d68050;
+  --background: #b25d40;
+  --text-color: #8e3f31;
+  --white-text: #f1e7e7;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  min-width: 320px;
+  min-height: 100vh;
+}
