@@ -133,11 +133,19 @@ function App() {
             </nav>
             <div className="socials">
               <h1>Nos siga nas redes sociais</h1>
-              <a href="" className="social">
+              <a
+                href="https://www.instagram.com/kings_bakeryof/"
+                target="_blank"
+                className="social"
+              >
                 <InstagramLogo size={32} />
                 @kings_bakeryof
               </a>
-              <a href="" className="social">
+              <a
+                href="https://www.tiktok.com/@kingsbakeryofc"
+                target="_blank"
+                className="social"
+              >
                 <TiktokLogo size={32} />
                 @kingsbakeryofc
               </a>
