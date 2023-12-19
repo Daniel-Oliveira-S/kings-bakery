@@ -376,3 +376,57 @@ footer {
   gap: 1rem;
   color: #fff;
 }
+
+@media screen and (max-width: 768px) {
+  #nav {
+    padding: 0 2rem;
+  }
+
+  #menu {
+    display: none;
+  }
+
+  #nav > a {
+    display: none;
+  }
+  #hero-text {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  #hero-text p:nth-child(2) {
+    font-size: 2rem;
+  }
+  .sobre-grid {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .sobre-grid p {
+    width: 100%;
+  }
+  .card-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .container {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .products-container {
+    align-items: center;
+    width: 100%;
+  }
+  .products-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .socials {
+    flex-direction: column;
+  }
+
+  #nav-footer {
+    display: none;
+  }
+}
